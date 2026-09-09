@@ -69,43 +69,6 @@ document.querySelectorAll(".menu a").forEach(link => {
 });
 
 
-/* ==========================
-   ACTIVITY MODAL
-========================== */
-
-const modal = document.getElementById("activityModal");
-const modalImage = document.getElementById("modalImage");
-const modalTitle = document.getElementById("modalTitle");
-const modalDesc = document.getElementById("modalDesc");
-
-document.querySelectorAll(".activity-item").forEach(card => {
-
-    card.addEventListener("click", function () {
-
-        // Ambil foto yang sedang aktif di slider
-        const activePhoto = this.querySelector(".activity-photo.active");
-
-        modalImage.src = activePhoto.src;
-        modalTitle.textContent = this.dataset.title;
-        modalDesc.textContent = this.dataset.desc;
-
-        modal.classList.add("show");
-
-    });
-
-});
-
-document.querySelector(".close-modal").onclick = () => {
-    modal.classList.remove("show");
-};
-
-modal.onclick = (e) => {
-    if (e.target === modal) {
-        modal.classList.remove("show");
-    }
-};
-
-
 /* =========================================
    ACTIVITY PHOTO SLIDER
 ========================================= */

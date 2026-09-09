@@ -704,31 +704,6 @@ header {
     transform: scale(1.25);
 }
 
-/* PARALLAX */
-
-.parallax {
-    height: 60vh;
-    background:
-        linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
-        url("assets/parallax.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.parallax h2 {
-    font-size: clamp(34px, 6vw, 62px);
-}
-
-.parallax p {
-    margin-top: 15px;
-    color: #ddd;
-}
-
 /* FOOTER */
 
 .site-footer {

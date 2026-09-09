@@ -70,7 +70,7 @@ document.querySelectorAll(".menu a").forEach(link => {
 
 
 /* =========================================
-   ACTIVITY PHOTO SLIDER
+   ACTIVITY PHOTO SLIDER — MANUAL DOT
 ========================================= */
 
 document.querySelectorAll(".activity-slider").forEach(slider => {
@@ -100,7 +100,6 @@ document.querySelectorAll(".activity-slider").forEach(slider => {
 
         dot.addEventListener("click", function (e) {
 
-            // Supaya klik dots tidak membuka modal kegiatan
             e.stopPropagation();
 
             showActivityPhoto(index);
@@ -108,19 +107,6 @@ document.querySelectorAll(".activity-slider").forEach(slider => {
         });
 
     });
-
-    // Otomatis berganti foto
-    setInterval(() => {
-
-        current++;
-
-        if (current >= photos.length) {
-            current = 0;
-        }
-
-        showActivityPhoto(current);
-
-    }, 10000);
 
 });
 

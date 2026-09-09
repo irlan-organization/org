@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN US — IRLAN</title>
+    <link rel="stylesheet" href="https://irlan-organization.github.io/org/form/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="form-page">
+        <div class="form-header">
+            <span class="form-tag">IRLAN ORGANIZATION</span>
+            <h1>JOIN US</h1>
+            <p>
+                Isi formulir di bawah ini untuk mendaftarkan diri
+                menjadi bagian dari IRLAN.
+            </p>
+        </div>
+
+        <div id="formAlert" class="form-alert">
+            <div class="form-alert-box">
+                <div class="form-alert-icon">!</div>
+                <div class="form-alert-content">
+                    <h3 id="formAlertTitle">DATA BELUM LENGKAP</h3>
+                    <p id="formAlertMessage">
+                        Semua data wajib diisi.
+                    </p>
+                </div>
+                <button type="button" id="formAlertClose">OK</button>
+            </div>
+        </div>
+
+        <form class="join-form" novalidate>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="panggilan">Nama Panggilan</label>
+                <input type="text" id="panggilan" name="panggilan" placeholder="Masukkan nama panggilan" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal">Tanggal Lahir</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+            <div class="form-group">
+                <label for="tempat">Tempat Lahir</label>
+                <input type="text" id="tempat" name="tempat" placeholder="Masukkan tempat lahir" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="motivasi">Motivasi Join ke Kami</label>
+                <textarea id="motivasi" name="motivasi"
+                    placeholder="Ceritakan alasan kamu ingin bergabung dengan IRLAN..." required></textarea>
+            </div>
+
+            <!-- KONTAK & SOSIAL MEDIA -->
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Contoh: 081234567890" required>
+            </div>
+            <div class="form-group">
+                <label for="instagram">Instagram</label>
+                <input type="text" id="instagram" name="instagram" placeholder="Contoh: @username" required>
+            </div>
+            <div class="form-group">
+                <label for="tiktok">TikTok</label>
+                <input type="text" id="tiktok" name="tiktok" placeholder="Contoh: @username" required>
+            </div>
+            <button type="submit" class="submit-btn">
+                KIRIM PENDAFTARAN
+            </button>
+        </form>
+        <a href="https://irlan-organization.github.io/org/home/" class="back">
+            ← KEMBALI KE HOME
+        </a>
+    </main>
+
+    <script src="https://irlan-organization.github.io/org/form/js/form.js"></script>
+
+</body>
+
+</html>

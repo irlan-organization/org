@@ -508,6 +508,11 @@ header {
     transform: scale(1.25);
 }
 
+.merchandise h2,
+.activity h2 {
+    margin: 0 0 32px;
+}
+
 /* MERCHANDISE */
 
 .merchandise {
@@ -1067,13 +1072,10 @@ header {
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
-
         gap: 16px;
         padding: 0 0 12px;
-
         scroll-snap-type: x mandatory;
         scroll-padding-left: 0;
-
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
     }
@@ -1086,7 +1088,6 @@ header {
         flex: 0 0 100%;
         width: 100%;
         max-width: 100%;
-
         scroll-snap-align: start;
         scroll-snap-stop: always;
     }

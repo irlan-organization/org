@@ -120,7 +120,7 @@ document.querySelectorAll(".activity-slider").forEach(slider => {
 
         showActivityPhoto(current);
 
-    }, 4000);
+    }, 10000);
 
 });
 
@@ -179,7 +179,7 @@ if (aboutSlider) {
             }
 
             showAbout(currentIndex);
-        }, 4000);
+        }, 5000);
     }
 
     // Jalankan slider

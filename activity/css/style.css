@@ -293,18 +293,14 @@ header {
 }
 
 .activity-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
     margin-top: 15px;
-    font-size: clamp(11px, 1.2vw, 13px);
-    color: #777;
+    font-size: clamp(9px, 1.2vw, 13px);
+    color: #9c9c9c;
+    line-height: 1.1;
 }
 
 .activity-meta span {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    display: block;
 }
 
 /* FOOTER */

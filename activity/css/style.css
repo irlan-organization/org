@@ -292,6 +292,21 @@ header {
     line-height: 1.2;
 }
 
+.activity-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 15px;
+    font-size: clamp(11px, 1.2vw, 13px);
+    color: #777;
+}
+
+.activity-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 /* FOOTER */
 
 .site-footer {

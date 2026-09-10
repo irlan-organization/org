@@ -187,7 +187,7 @@ header {
     max-width: 620px;
     color: #9f9f9f;
     line-height: 1.2;
-    font-size: clamp(14px, 7vw, 90px);
+    font-size: clamp(10px, 7vw, 90px);
 }
 
 /* ===========================
@@ -289,7 +289,7 @@ header {
 .activity-info p {
     color: #9c9c9c;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 /* FOOTER */

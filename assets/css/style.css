@@ -87,6 +87,10 @@ header {
     letter-spacing: 1px;
 }
 
+#active {
+    color: #ff1f2d;
+}
+
 
 /* ===============================
    JOIN US
@@ -518,7 +522,7 @@ header {
 .merchandise h2 {
     font-size: 30px;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -608,7 +612,7 @@ header {
 .activity h2 {
     font-size: 30px;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -1041,10 +1045,6 @@ header {
 
     .activity-info h3 {
         font-size: 28px;
-    }
-
-    .parallax {
-        background-attachment: scroll;
     }
 
 }

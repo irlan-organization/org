@@ -690,8 +690,8 @@ header {
 }
 
 .activity-dot {
-    width: 9px;
-    height: 9px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background: rgba(255, 255, 255, .35);
     cursor: pointer;

@@ -548,3 +548,59 @@ header {
     }
 
 }
+
+@media screen and (max-width:720px) {
+
+    .activity-page {
+        padding: 90px 0 45px;
+    }
+
+    .page-title {
+        margin-bottom: 24px;
+    }
+
+    .page-title h1 {
+        font-size: 48px;
+        line-height: .9;
+    }
+
+    .page-title p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .activity-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .activity-card {
+        border-radius: 0;
+    }
+
+    .activity-slider {
+        height: 240px;
+    }
+
+    .activity-info {
+        padding: 16px;
+    }
+
+    .activity-category {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .activity-info h3 {
+        font-size: 22px;
+        line-height: 1.1;
+        margin: 8px 0;
+    }
+
+    .activity-info p {
+        font-size: 13px;
+        line-height: 1.5;
+        color: #9c9c9c;
+    }
+}

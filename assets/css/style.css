@@ -35,7 +35,8 @@ h3,
     letter-spacing: 1px;
 }
 
-/* Teks biasa */
+/* TEKS BIASA */
+
 body,
 p,
 a,
@@ -44,7 +45,10 @@ button {
     font-family: 'Inter', sans-serif;
 }
 
-/* NAVBAR */
+
+/* ===============================
+   NAVBAR
+=============================== */
 
 header {
     position: fixed;
@@ -69,20 +73,21 @@ header {
 .logo {
     font-family: 'Oswald', sans-serif;
     color: #fff;
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: clamp(22px, 2.5vw, 30px);
+    letter-spacing: clamp(1px, .2vw, 2px);
 }
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: clamp(20px, 2.7vw, 32px);
     list-style: none;
 }
 
 .menu a {
     color: #fff;
     text-decoration: none;
+    font-size: clamp(13px, 1.2vw, 16px);
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -91,29 +96,32 @@ header {
     color: #ff1f2d;
 }
 
+.menu a:hover {
+    color: #e50914;
+}
+
 
 /* ===============================
    JOIN US
-   =============================== */
+=============================== */
 
 .nav-join a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 38px;
-    padding: 0 22px;
+    padding: 0 clamp(16px, 2vw, 22px);
     background: #e50914;
     color: #fff !important;
     font-family: 'Oswald', sans-serif;
-    font-size: 12px;
+    font-size: clamp(10px, 1vw, 12px);
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: clamp(1px, .15vw, 1.5px);
     text-transform: uppercase;
     clip-path: polygon(7px 0,
             100% 0,
             calc(100% - 7px) 100%,
             0 100%);
-
     transition: .25s ease;
 }
 
@@ -126,7 +134,7 @@ header {
 
 /* ===============================
    HAMBURGER
-   =============================== */
+=============================== */
 
 .hamburger {
     display: none;
@@ -135,29 +143,15 @@ header {
     border: none;
     background: transparent;
     color: #fff;
-    font-size: 28px;
+    font-size: clamp(24px, 3vw, 28px);
     cursor: pointer;
     z-index: 1002;
 }
 
-/* DESKTOP */
-.menu {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
 
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.menu a:hover {
-    color: #e50914;
-}
-
-/* HERO */
+/* ===============================
+   HERO
+=============================== */
 
 .hero {
     height: 100vh;
@@ -199,7 +193,7 @@ header {
 
 .hero h1 {
     font-size: clamp(48px, 9vw, 100px);
-    letter-spacing: 7px;
+    letter-spacing: clamp(3px, .7vw, 7px);
     margin: 0 0 8px;
     line-height: 1;
 }
@@ -209,13 +203,13 @@ header {
     color: #ddd;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: clamp(13px, 1.2vw, 12px);
+    font-size: clamp(12px, 1.5vw, 16px);
 }
 
 .badge {
     color: #fff;
     margin: 0;
-    font-size: clamp(8px, 1.2vw, 12px);
+    font-size: clamp(9px, 1vw, 12px);
 }
 
 .btn {
@@ -225,25 +219,26 @@ header {
     justify-content: center;
     min-width: 170px;
     height: 52px;
-    padding: 0 28px;
+    padding: 0 clamp(20px, 2.5vw, 28px);
     background: #e50914;
     color: #fff;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: clamp(13px, 1.4vw, 16px);
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: clamp(1px, .15vw, 1.5px);
     text-transform: uppercase;
     overflow: hidden;
     transition: .3s ease;
-    /* bentuk sedikit miring */
+
     clip-path: polygon(8px 0,
             100% 0,
             calc(100% - 8px) 100%,
             0 100%);
+
+    isolation: isolate;
 }
 
-/* efek garis / kilatan */
 .btn::before {
     content: "";
     position: absolute;
@@ -256,7 +251,6 @@ header {
     transition: .5s ease;
 }
 
-/* garis merah gelap di bawah */
 .btn::after {
     content: "";
     position: absolute;
@@ -268,11 +262,6 @@ header {
     transform: scaleX(0);
     transform-origin: left;
     transition: .3s ease;
-}
-
-/* TEXT */
-.btn {
-    isolation: isolate;
 }
 
 .btn:hover {
@@ -313,7 +302,10 @@ header {
     transform: scale(1.2);
 }
 
-/* ABOUT */
+
+/* ===============================
+   ABOUT
+=============================== */
 
 .about {
     padding: 30px 0;
@@ -327,11 +319,6 @@ header {
     align-items: center;
 }
 
-
-/* =========================
-   TEXT
-========================= */
-
 .about-text {
     padding-right: 20px;
 }
@@ -339,17 +326,17 @@ header {
 .section-tag {
     display: inline-block;
     color: #ff5a5f;
-    font-size: 12px;
+    font-size: clamp(9px, 1vw, 12px);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: clamp(1px, .2vw, 2px);
 }
 
 .about-text h2 {
     margin: 10px 0 22px;
     font-family: 'Oswald', sans-serif;
-    font-size: clamp(55px, 7vw, 90px);
+    font-size: clamp(48px, 7vw, 90px);
     line-height: .9;
-    letter-spacing: 2px;
+    letter-spacing: clamp(1px, .2vw, 2px);
     text-transform: uppercase;
     color: #fff;
 }
@@ -357,27 +344,28 @@ header {
 .about-text p {
     max-width: 520px;
     color: #aaa;
-    font-size: 15px;
+    font-size: clamp(13px, 1.3vw, 15px);
     line-height: 1.9;
     margin-bottom: 30px;
 }
 
 
-/* =========================
-   BUTTON
-========================= */
+/* ===============================
+   ABOUT BUTTON
+=============================== */
 
 .about-btn {
     display: inline-flex;
     align-items: center;
-    padding: 13px 22px;
+    padding: 13px clamp(18px, 2vw, 22px);
     color: #fff;
     background: #e50914;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1.2vw, 14px);
     font-weight: 700;
     letter-spacing: 1px;
+
     clip-path: polygon(7px 0,
             100% 0,
             calc(100% - 7px) 100%,
@@ -388,7 +376,7 @@ header {
 
 .about-btn span {
     margin-left: 10px;
-    font-size: 17px;
+    font-size: clamp(15px, 1.5vw, 17px);
     transition: .3s ease;
 }
 
@@ -403,9 +391,9 @@ header {
 }
 
 
-/* =========================
-   FOTO SLIDER
-========================= */
+/* ===============================
+   ABOUT PHOTO SLIDER
+=============================== */
 
 .about-slider {
     position: relative;
@@ -438,9 +426,9 @@ header {
 }
 
 
-/* =========================
-   OVERLAY
-========================= */
+/* ===============================
+   ABOUT OVERLAY
+=============================== */
 
 .about-overlay {
     position: absolute;
@@ -455,9 +443,9 @@ header {
 }
 
 
-/* =========================
-   FOTO INFO
-========================= */
+/* ===============================
+   ABOUT INFO
+=============================== */
 
 .about-info {
     position: absolute;
@@ -469,25 +457,25 @@ header {
 
 .about-info span {
     color: #ff5a5f;
-    font-size: 11px;
+    font-size: clamp(9px, 1vw, 11px);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: clamp(1px, .2vw, 2px);
 }
 
 .about-info h3 {
     margin-top: 8px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 34px;
+    font-size: clamp(24px, 3vw, 34px);
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 
-/* =========================
-   DOTS
-========================= */
+/* ===============================
+   ABOUT DOTS
+=============================== */
 
 .about-dots {
     position: absolute;
@@ -512,7 +500,10 @@ header {
     transform: scale(1.25);
 }
 
-/* MERCHANDISE */
+
+/* ===============================
+   MERCHANDISE
+=============================== */
 
 .merchandise {
     padding: 30px 0;
@@ -520,7 +511,7 @@ header {
 }
 
 .merchandise h2 {
-    font-size: 30px;
+    font-size: clamp(24px, 2.5vw, 30px);
     color: #fff;
     margin-bottom: 18px;
     text-transform: uppercase;
@@ -557,8 +548,6 @@ header {
     transition: transform .6s ease;
 }
 
-/* OVERLAY */
-
 .merch-overlay {
     position: absolute;
     inset: 0;
@@ -568,8 +557,6 @@ header {
             rgba(0, 0, 0, .55) 45%,
             rgba(0, 0, 0, .05) 100%);
 }
-
-/* INFO */
 
 .merch-info {
     position: absolute;
@@ -581,15 +568,15 @@ header {
 
 .merch-info span {
     color: #ff5a5f;
-    font-size: 11px;
+    font-size: clamp(9px, 1vw, 11px);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: clamp(1px, .2vw, 2px);
 }
 
 .merch-info h3 {
     margin: 8px 0 5px;
     color: #fff;
-    font-size: 32px;
+    font-size: clamp(24px, 2.7vw, 32px);
     line-height: 1;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -598,11 +585,14 @@ header {
 
 .merch-info p {
     color: #ccc;
-    font-size: 14px;
+    font-size: clamp(12px, 1.2vw, 14px);
     line-height: 1.5;
 }
 
-/* ACTIVITY */
+
+/* ===============================
+   ACTIVITY
+=============================== */
 
 .activity {
     padding: 30px 0;
@@ -610,7 +600,7 @@ header {
 }
 
 .activity h2 {
-    font-size: 30px;
+    font-size: clamp(24px, 2.5vw, 30px);
     color: #fff;
     margin-bottom: 18px;
     text-transform: uppercase;
@@ -660,15 +650,15 @@ header {
 
 .activity-category {
     color: #e50914;
-    font-size: 11px;
+    font-size: clamp(9px, 1vw, 11px);
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: clamp(1px, .2vw, 2px);
 }
 
 .activity-info h3 {
     margin: 8px 0 10px;
     color: #fff;
-    font-size: 24px;
+    font-size: clamp(21px, 2.2vw, 28px);
     font-family: 'Oswald', sans-serif;
     line-height: 1.1;
 }
@@ -676,8 +666,8 @@ header {
 .activity-info p {
     margin: 0;
     color: #9a9a9a;
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: clamp(12px, 1.2vw, 14px);
+    line-height: 1.5;
 }
 
 .activity-dots {
@@ -703,7 +693,10 @@ header {
     transform: scale(1.25);
 }
 
-/* MEMBER */
+
+/* ===============================
+   MEMBER
+=============================== */
 
 .member {
     padding: 30px 0;
@@ -712,7 +705,7 @@ header {
 
 .member h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: clamp(24px, 2.5vw, 30px);
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 18px;
@@ -721,15 +714,13 @@ header {
 .member-grid {
     display: grid;
     grid-template-columns: 1fr;
-    /* Desktop & mobile sama */
     gap: 28px;
 }
 
 .member-content p {
     max-width: 700px;
-    /* Tidak terlalu melebar */
     color: #9c9c9c;
-    font-size: 15px;
+    font-size: clamp(13px, 1.3vw, 15px);
     line-height: 1.5;
     margin-bottom: 28px;
 }
@@ -743,8 +734,9 @@ header {
     color: #fff;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
+    font-size: clamp(13px, 1.2vw, 15px);
     font-weight: 500;
-    letter-spacing: 0.9px;
+    letter-spacing: .9px;
 }
 
 .member-btn:hover {
@@ -770,7 +762,10 @@ header {
     transform: scale(1.04);
 }
 
-/* FOOTER */
+
+/* ===============================
+   FOOTER
+=============================== */
 
 .site-footer {
     background: #0a0a0a;
@@ -788,20 +783,21 @@ header {
     margin: 0;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 42px;
+    font-size: clamp(32px, 4vw, 42px);
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: clamp(2px, .4vw, 4px);
     text-transform: uppercase;
 }
 
 .site-footer p {
     margin: 12px 0 28px;
     color: #777;
-    font-size: 11px;
+    font-size: clamp(9px, .9vw, 11px);
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: clamp(1px, .15vw, 1.5px);
     text-transform: uppercase;
 }
+
 
 /* SOCIAL MEDIA */
 
@@ -845,6 +841,7 @@ header {
     transform: translateY(-4px);
 }
 
+
 /* GARIS */
 
 .footer-line {
@@ -860,58 +857,18 @@ header {
 
 .site-footer small {
     color: #555;
-    font-size: 9px;
+    font-size: clamp(8px, .8vw, 9px);
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: clamp(1px, .15vw, 1.5px);
     text-transform: uppercase;
 }
 
 
-/* MOBILE */
+/* =====================================================
+   MOBILE
+===================================================== */
 
-@media (max-width: 600px) {
-
-    .site-footer {
-        padding: 60px 18px 28px;
-    }
-
-    .site-footer h2 {
-        font-size: clamp(32px, 10vw, 42px);
-        letter-spacing: 3px;
-    }
-
-    .site-footer p {
-        font-size: 9px;
-        line-height: 1.7;
-        max-width: 300px;
-        margin: 10px auto 25px;
-    }
-
-    .social-links {
-        gap: 12px;
-    }
-
-    .social-links a {
-        width: 42px;
-        height: 42px;
-    }
-
-    .footer-line {
-        margin: 32px auto 22px;
-    }
-
-    .site-footer small {
-        font-size: 8px;
-    }
-}
-
-
-
-
-
-/* MOBILE */
-
-@media(max-width:768px) {
+@media (max-width: 768px) {
 
     .hamburger {
         display: flex;
@@ -929,7 +886,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 28px;
+        gap: clamp(22px, 5vw, 28px);
         transform: translateY(-100%);
         transition: transform .4s ease;
         z-index: 1000;
@@ -954,21 +911,22 @@ header {
 
     .menu a {
         font-family: 'Oswald', sans-serif;
-        font-size: 32px;
+        font-size: clamp(26px, 7vw, 32px);
         font-weight: 700;
-        letter-spacing: 2px;
+        letter-spacing: clamp(1px, .5vw, 2px);
         text-transform: uppercase;
     }
 
 
-    /* JOIN US DI MOBILE */
+    /* JOIN US MOBILE */
 
     .nav-join a {
-        height: 48px;
-        padding: 0 32px;
+        height: clamp(44px, 12vw, 48px);
+        padding: 0 clamp(22px, 8vw, 32px);
         background: #e50914;
-        font-size: 18px;
-        letter-spacing: 2px;
+        font-size: clamp(15px, 4vw, 18px);
+        letter-spacing: clamp(1px, .5vw, 2px);
+
         clip-path: polygon(8px 0,
                 100% 0,
                 calc(100% - 8px) 100%,
@@ -985,6 +943,9 @@ header {
         overflow: hidden;
     }
 
+
+    /* ABOUT */
+
     .about {
         padding: 30px 0;
     }
@@ -999,11 +960,11 @@ header {
     }
 
     .about-slider {
-        height: 390px;
+        height: clamp(330px, 55vw, 390px);
     }
 
     .about-info h3 {
-        font-size: 29px;
+        font-size: clamp(24px, 7vw, 30px);
     }
 
 
@@ -1040,39 +1001,23 @@ header {
 
     .merch-image {
         position: relative;
-        height: 420px;
+        height: clamp(350px, 65vw, 420px);
     }
 
     .merch-info {
         position: absolute;
-        left: 22px;
-        right: 22px;
-        bottom: 24px;
+        left: clamp(18px, 5vw, 22px);
+        right: clamp(18px, 5vw, 22px);
+        bottom: clamp(20px, 5vw, 24px);
         z-index: 2;
     }
 
-    .merch-info span {
-        color: #ff5a5f;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-
     .merch-info h3 {
-        margin: 8px 0 5px;
-        color: #fff;
-        font-size: 32px;
-        line-height: 1;
-        text-transform: uppercase;
-        font-family: 'Oswald', sans-serif;
-        letter-spacing: 1px;
+        font-size: clamp(24px, 7vw, 32px);
     }
 
     .merch-info p {
-        margin: 0;
-        color: #ccc;
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: clamp(12px, 3.5vw, 14px);
     }
 
 
@@ -1108,11 +1053,15 @@ header {
     }
 
     .activity-slider {
-        height: 390px;
+        height: clamp(210px, 55vw, 390px);
     }
 
     .activity-info h3 {
-        font-size: 28px;
+        font-size: clamp(21px, 6vw, 28px);
+    }
+
+    .activity-info p {
+        font-size: clamp(12px, 3.5vw, 14px);
     }
 
 
@@ -1133,77 +1082,42 @@ header {
     }
 
     .member-image img {
-        height: 340px;
+        height: clamp(340px, 70vw, 520px);
     }
 
-}
 
-@media(max-width:500px) {
+    /* FOOTER */
 
-    .about-slider {
-        height: 330px;
+    .site-footer {
+        padding: 60px 18px 28px;
     }
 
-    .about-text h2 {
-        font-size: 60px;
+    .site-footer h2 {
+        font-size: clamp(32px, 10vw, 42px);
+        letter-spacing: clamp(2px, .8vw, 3px);
     }
 
-    .activity-slider {
-        height: 210px;
+    .site-footer p {
+        font-size: clamp(9px, 2.5vw, 11px);
+        line-height: 1.7;
+        max-width: 300px;
+        margin: 10px auto 25px;
     }
 
-    .merchandise {
-        padding: 30px 0;
+    .social-links {
+        gap: 12px;
     }
 
-    .merch-image {
-        height: 350px;
+    .social-links a {
+        width: clamp(40px, 11vw, 44px);
+        height: clamp(40px, 11vw, 44px);
     }
 
-}
-
-@media screen and (max-width:720px) {
-
-    /* ABOUT */
-    .about-slider {
-        height: 360px;
+    .footer-line {
+        margin: 32px auto 22px;
     }
 
-    .about-info h3 {
-        font-size: 30px;
-    }
-
-    /* MERCHANDISE */
-    .merch-image {
-        height: 390px;
-    }
-
-    .merch-info {
-        left: 18px;
-        right: 18px;
-        bottom: 20px;
-    }
-
-    .merch-info h3 {
-        font-size: 28px;
-    }
-
-    /* ACTIVITY */
-    .activity-slider {
-        height: 280px;
-    }
-
-    .activity-info {
-        padding: 18px;
-    }
-
-    .activity-info h3 {
-        font-size: 22px;
-        line-height: 1.1;
-    }
-
-    .activity-info p {
-        font-size: 13px;
-        line-height: 1.5;
+    .site-footer small {
+        font-size: clamp(8px, 2.2vw, 9px);
     }
 }

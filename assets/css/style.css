@@ -1161,3 +1161,78 @@ header {
     }
 
 }
+
+@media screen and (max-width:720px) {
+
+    /* NAV */
+    .nav {
+        height: 68px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    /* ABOUT */
+    .about-slider {
+        height: 360px;
+    }
+
+    .about-info h3 {
+        font-size: 30px;
+    }
+
+    /* MERCHANDISE */
+    .merch-image {
+        height: 390px;
+    }
+
+    .merch-info {
+        left: 18px;
+        right: 18px;
+        bottom: 20px;
+    }
+
+    .merch-info h3 {
+        font-size: 28px;
+    }
+
+    /* ACTIVITY */
+    .activity-slider {
+        height: 280px;
+    }
+
+    .activity-info {
+        padding: 18px;
+    }
+
+    .activity-info h3 {
+        font-size: 22px;
+        line-height: 1.1;
+    }
+
+    .activity-info p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* MEMBER */
+    .member-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .member-info h3 {
+        font-size: 16px;
+    }
+
+    .member-photo {
+        aspect-ratio: 4/5;
+    }
+
+    /* FOOTER */
+    .site-footer {
+        padding: 55px 18px 28px;
+    }
+}

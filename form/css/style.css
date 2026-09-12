@@ -74,7 +74,7 @@ body {
     background: #e50914;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 22px;
+    font-size: clamp(18px, 3vw, 22px);
     font-weight: 700;
     clip-path: polygon(6px 0,
             100% 0,
@@ -90,7 +90,7 @@ body {
     margin: 0 0 7px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: clamp(17px, 2.5vw, 20px);
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -99,7 +99,7 @@ body {
     margin: 0;
     color: #999;
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: clamp(11px, 1.5vw, 13px);
     line-height: 1.6;
 }
 
@@ -113,7 +113,7 @@ body {
     background: #e50914;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 12px;
+    font-size: clamp(10px, 1.4vw, 12px);
     font-weight: 700;
     letter-spacing: 1px;
     cursor: pointer;
@@ -136,11 +136,11 @@ body {
     }
 
     .form-alert-content h3 {
-        font-size: 18px;
+        font-size: clamp(16px, 4.5vw, 18px);
     }
 
     .form-alert-content p {
-        font-size: 12px;
+        font-size: clamp(11px, 3.5vw, 12px);
     }
 
 }
@@ -157,7 +157,7 @@ body {
 
 .form-tag {
     color: #e50914;
-    font-size: 11px;
+    font-size: clamp(9px, 1.2vw, 11px);
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -174,7 +174,7 @@ body {
 .form-header p {
     margin-top: 15px;
     color: #888;
-    font-size: 14px;
+    font-size: clamp(12px, 1.5vw, 14px);
     line-height: 1.7;
 }
 
@@ -192,7 +192,7 @@ body {
     display: block;
     margin-bottom: 8px;
     color: #ccc;
-    font-size: 12px;
+    font-size: clamp(10px, 1.3vw, 12px);
     font-weight: 600;
     letter-spacing: .5px;
 }
@@ -206,7 +206,7 @@ body {
     padding: 14px 15px;
     outline: none;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: clamp(12px, 1.5vw, 14px);
     transition: .25s ease;
 }
 
@@ -228,7 +228,7 @@ body {
     background: #e50914;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: clamp(14px, 1.8vw, 16px);
     font-weight: 700;
     letter-spacing: 1.5px;
     cursor: pointer;
@@ -251,7 +251,7 @@ body {
     margin-top: 25px;
     color: #777;
     text-decoration: none;
-    font-size: 12px;
+    font-size: clamp(10px, 1.3vw, 12px);
     transition: .25s ease;
 }
 
@@ -270,7 +270,7 @@ body {
     }
 
     .form-header h1 {
-        font-size: 52px;
+        font-size: clamp(42px, 12vw, 52px);
     }
 
 }

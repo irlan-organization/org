@@ -1164,16 +1164,6 @@ header {
 
 @media screen and (max-width:720px) {
 
-    /* NAV */
-    .nav {
-        height: 68px;
-        padding: 0 18px;
-    }
-
-    .logo {
-        font-size: 28px;
-    }
-
     /* ABOUT */
     .about-slider {
         height: 360px;
@@ -1215,10 +1205,5 @@ header {
     .activity-info p {
         font-size: 13px;
         line-height: 1.5;
-    }
-
-    /* FOOTER */
-    .site-footer {
-        padding: 55px 18px 28px;
     }
 }

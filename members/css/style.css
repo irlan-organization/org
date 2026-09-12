@@ -185,7 +185,7 @@ header {
 
 .member-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 22px;
 }
 
@@ -226,23 +226,14 @@ header {
 }
 
 .member-info {
-    padding: 18px;
-}
-
-.member-info span {
-    display: block;
-    color: #ff4b55;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
+    padding: 7px;
 }
 
 .member-info h3 {
     font-family: 'Oswald', sans-serif;
     color: #0d0d0d;
     font-size: 24px;
-    line-height: 1;
+    font-weight: bolder;
     text-transform: uppercase;
 }
 
@@ -483,16 +474,12 @@ header {
     }
 
     .member-info {
-        padding: 14px;
-    }
-
-    .member-info span {
-        font-size: 9px;
-        letter-spacing: 1.5px;
+        padding: 6px;
     }
 
     .member-info h3 {
         font-size: 17px;
+        font-weight: bolder;
     }
 
 }

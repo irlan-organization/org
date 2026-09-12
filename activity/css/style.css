@@ -69,7 +69,7 @@ header {
 .logo {
     font-family: 'Oswald', sans-serif;
     color: #fff;
-    font-size: 30px;
+    font-size: clamp(22px, 2.5vw, 30px);
     letter-spacing: 2px;
 }
 
@@ -105,7 +105,7 @@ header {
     background: #e50914;
     color: #fff !important;
     font-family: 'Oswald', sans-serif;
-    font-size: 12px;
+    font-size: clamp(10px, 1vw, 12px);
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -135,7 +135,7 @@ header {
     border: none;
     background: transparent;
     color: #fff;
-    font-size: 28px;
+    font-size: clamp(24px, 3vw, 28px);
     cursor: pointer;
     z-index: 1002;
 }
@@ -170,7 +170,7 @@ header {
 
 .page-title span {
     color: #ff5a5f;
-    font-size: 12px;
+    font-size: clamp(9px, 1vw, 12px);
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -187,7 +187,7 @@ header {
     max-width: 620px;
     color: #9f9f9f;
     line-height: 1.2;
-    font-size: 10px;
+    font-size: clamp(10px, 1.2vw, 14px);
 }
 
 /* ===========================
@@ -272,7 +272,7 @@ header {
 
 .activity-category {
     color: #e50914;
-    font-size: 11px;
+    font-size: clamp(9px, 1vw, 11px);
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -280,7 +280,7 @@ header {
 .activity-info h3 {
     margin: 10px 0 10px;
     font-family: 'Oswald', sans-serif;
-    font-size: 28px;
+    font-size: clamp(22px, 2.5vw, 28px);
     line-height: 1;
     color: #fff;
     text-transform: uppercase;
@@ -288,7 +288,7 @@ header {
 
 .activity-info p {
     color: #9c9c9c;
-    font-size: 14px;
+    font-size: clamp(12px, 1.2vw, 14px);
     line-height: 1.2;
 }
 
@@ -321,7 +321,7 @@ header {
     margin: 0;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-size: 42px;
+    font-size: clamp(32px, 4vw, 42px);
     font-weight: 700;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -330,7 +330,7 @@ header {
 .site-footer p {
     margin: 12px 0 28px;
     color: #777;
-    font-size: 11px;
+    font-size: clamp(9px, .9vw, 11px);
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -393,7 +393,7 @@ header {
 
 .site-footer small {
     color: #555;
-    font-size: 9px;
+    font-size: clamp(8px, .8vw, 9px);
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -414,7 +414,7 @@ header {
     }
 
     .site-footer p {
-        font-size: 9px;
+        font-size: clamp(9px, 2.5vw, 11px);
         line-height: 1.7;
         max-width: 300px;
         margin: 10px auto 25px;
@@ -434,12 +434,9 @@ header {
     }
 
     .site-footer small {
-        font-size: 8px;
+        font-size: clamp(8px, 2vw, 9px);
     }
 }
-
-
-
 
 
 /* MOBILE */
@@ -487,7 +484,7 @@ header {
 
     .menu a {
         font-family: 'Oswald', sans-serif;
-        font-size: 32px;
+        font-size: clamp(26px, 7vw, 32px);
         font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -500,7 +497,7 @@ header {
         height: 48px;
         padding: 0 32px;
         background: #e50914;
-        font-size: 18px;
+        font-size: clamp(15px, 4vw, 18px);
         letter-spacing: 2px;
         clip-path: polygon(8px 0,
                 100% 0,
@@ -540,11 +537,11 @@ header {
     }
 
     .activity-info h3 {
-        font-size: 24px;
+        font-size: clamp(22px, 6vw, 24px);
     }
 
     .activity-info p {
-        font-size: 13px;
+        font-size: clamp(12px, 3.5vw, 13px);
     }
 
 }
@@ -560,13 +557,13 @@ header {
     }
 
     .page-title h1 {
-        font-size: 48px;
+        font-size: clamp(35px, 7vw, 48px);
         line-height: .9;
     }
 
     .page-title p {
         max-width: 100%;
-        font-size: 14px;
+        font-size: clamp(12px, 3.5vw, 14px);
         line-height: 1.6;
     }
 
@@ -588,18 +585,18 @@ header {
     }
 
     .activity-category {
-        font-size: 10px;
+        font-size: clamp(9px, 2.5vw, 10px);
         letter-spacing: 1.5px;
     }
 
     .activity-info h3 {
-        font-size: 22px;
+        font-size: clamp(20px, 5.5vw, 22px);
         line-height: 1.1;
         margin: 8px 0;
     }
 
     .activity-info p {
-        font-size: 13px;
+        font-size: clamp(12px, 3.5vw, 13px);
         line-height: 1.5;
         color: #9c9c9c;
     }

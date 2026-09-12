@@ -178,7 +178,7 @@ header {
 .page-title h1 {
     margin: 8px 0 12px;
     font-family: 'Oswald', sans-serif;
-    font-size: clamp(48px, 7vw, 90px);
+    font-size: clamp(35px, 7vw, 90px);
     line-height: .9;
     letter-spacing: 2px;
 }

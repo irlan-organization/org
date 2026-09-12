@@ -703,6 +703,72 @@ header {
     transform: scale(1.25);
 }
 
+/* MEMBER */
+
+.member {
+    padding: 30px 0;
+    background: #0b0b0b;
+}
+
+.member h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Desktop & mobile sama */
+    gap: 28px;
+}
+
+.member-content p {
+    max-width: 700px;
+    /* Tidak terlalu melebar */
+    color: #9c9c9c;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.member-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 28px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.9px;
+}
+
+.member-btn:hover {
+    background: #fff;
+    color: #ff2330;
+    transform: translateY(-3px);
+}
+
+.member-image {
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.member-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+    transition: .4s;
+}
+
+.member-image:hover img {
+    transform: scale(1.04);
+}
+
 /* FOOTER */
 
 .site-footer {
@@ -939,6 +1005,9 @@ header {
         font-size: 29px;
     }
 
+
+    /* MERCHANDISE */
+
     .merchandise {
         padding: 30px 0;
     }
@@ -1006,9 +1075,7 @@ header {
     }
 
 
-    /* =========================
-       ACTIVITY
-    ========================= */
+    /* ACTIVITY */
 
     .activity {
         padding: 30px 0;
@@ -1045,6 +1112,27 @@ header {
 
     .activity-info h3 {
         font-size: 28px;
+    }
+
+
+    /* MEMBER */
+
+    .member {
+        padding: 30px 0;
+    }
+
+    .member-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .member-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .member-image img {
+        height: 340px;
     }
 
 }
